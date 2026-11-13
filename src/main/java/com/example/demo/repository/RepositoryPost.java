@@ -1,4 +1,11 @@
 package com.example.demo.repository;
 
-public interface RepositoryPost {
+import com.example.demo.model.Post;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+public interface RepositoryPost extends JpaRepository<Post, UUID> {
+
 }
